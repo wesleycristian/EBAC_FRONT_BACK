@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Formulário de Validação</h2>
+        <form id="formulario">
+            <input type="number" id="numeroA" required placeholder="Digite o numero A"><br>
+            <P class="error-message">
+                O numero "A" tem que ser menor que o "B"
+            </P>
+            <input type="number" id="numeroB" required placeholder="Digite o numero B"><br>
+            <button type="submit" id="botton" value="Submeter">Comparar</button>
+            <button type="button" id="limparCampo" value="Submeter">Limpar</button>
+        </form>
+        <p class="success-message"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
