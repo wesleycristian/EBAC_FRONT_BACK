@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color:rgb(252, 252, 252);
+    font-weight: bold;
+}
+#sobrealoja .div-img,
+#produtos .produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.div-img{
+align-items: center;
+}
+.div-img img {
+    width: 35%;
+    height:25%;
+    border-style:groove
+
+}
+
+#sobrealoja .texto-sobre,
+.produto {
+    flex-basis: 45%;
+    margin: 10px;
+}
+
+#produtos .produto {
+    flex-basis: 20%;
+    text-align: center;
+    
+}
+
+h2 {
+    text-align: center;
+    background-color: #333;
+    color: rgb(252, 252, 252);
+}
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+  /* Estilos para Tablet */
+@media (max-width: 1023px) {
+    .div-img img,
+    #sobrealoja .texto-sobre,
+    .produto {
+    flex-basis: 100%;
+    }
+}
+/* Estilos para Mobile */
+@media (max-width: 640px) {
+    .div-img img {
+    width: 100%;
+    }
+    
+    #produtos .produto {
+    flex-basis: 100%;
+    }
+}
+    
